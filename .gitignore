@@ -1,0 +1,15 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# tModLoader build artifacts (just in case)
+*.tmod
