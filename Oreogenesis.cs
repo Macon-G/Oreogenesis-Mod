@@ -7,9 +7,8 @@ using Terraria.ModLoader;
 
 namespace Oreogenesis
 {
-	// Please read https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Modding-Guide#mod-skeleton-contents for more information about the various files in a mod.
 	public class Oreogenesis : Mod
 	{
-
-	}
+        public const string AssetPath = $"{nameof(Oreogenesis)}/Assets/";
+    }
 }

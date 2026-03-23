@@ -1,2 +1,22 @@
-# This file will automatically update with entries for new content after a build and reload.
+Tiles: {
+	CrystalAssemblerTile.MapEntry: Crystal Assembler Tile
+	CopperGeodeCrystal.MapEntry: Copper Geode Crystal
+	CopperGeodeBlock.MapEntry: Copper Geode Block
+}
 
+Items: {
+	CopperCrystalShard: {
+		DisplayName: Copper Crystal Shard
+		Tooltip: ""
+	}
+
+	CopperGeodeBlockItem: {
+		DisplayName: Copper Geode Block Item
+		Tooltip: ""
+	}
+
+	CrystalAssemblerItem: {
+		DisplayName: Crystal Assembler Item
+		Tooltip: ""
+	}
+}

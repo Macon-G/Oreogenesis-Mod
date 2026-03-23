@@ -7,6 +7,8 @@ namespace Oreogenesis.Content.Items.Placeables
 {
     public class CrystalAssemblerItem : ModItem
     {
+        public override string Texture => $"Oreogenesis/Assets/Items/Crafting/{Name}";
+
         public override void SetDefaults()
         {
             Item.width = 28;

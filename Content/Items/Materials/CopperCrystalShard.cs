@@ -6,6 +6,7 @@ namespace Oreogenesis.Content.Items.Materials
 {
     public class CopperCrystalShard : ModItem
     {
+        public override string Texture => $"Oreogenesis/Assets/Items/Crystals/{Name}";
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 25;
@@ -18,14 +19,6 @@ namespace Oreogenesis.Content.Items.Materials
             Item.maxStack = 9999;
             Item.value = Item.buyPrice(copper: 2);
             Item.rare = ItemRarityID.White;
-        }
-
-        public override void AddRecipes()
-        {
-            CreateRecipe()
-                .AddIngredient(this, 4)
-                .AddTile(ModContent.TileType<Tiles.Crafting.CrystalAssemblerTile>())
-                .Register();
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Oreogenesis.Content.Tiles.Crafting
 {
     public class CrystalAssemblerTile : ModTile
     {
+        public override string Texture => $"Oreogenesis/Assets/Tiles/Crafting/{Name}";
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -16,8 +17,6 @@ namespace Oreogenesis.Content.Tiles.Crafting
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
             TileObjectData.addTile(Type);
-
-            AdjTiles = new int[] { TileID.WorkBenches };
 
             AddMapEntry(new Color(120, 180, 220), CreateMapEntryName());
 
