@@ -8,6 +8,6 @@ namespace Oreogenesis.Content.Tiles.Crystals
     {
         protected override int GeodeType => ModContent.TileType<Geodes.CopperGeodeBlock>();
         protected override int ShardItemType => ModContent.ItemType<CopperCrystalShard>();
-        protected override Color MapColor => new Color(210, 130, 70);
+        protected override Color MapColor => new(210, 130, 70);
     }
 }

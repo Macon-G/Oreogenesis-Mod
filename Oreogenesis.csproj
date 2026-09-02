@@ -10,11 +10,6 @@
 
 	<!-- References -->
 	<ItemGroup>
-	  <Folder Include="Assets\Items\Crystals\" />
-	  <Folder Include="Assets\Items\Geodes\" />
-	  <Folder Include="Assets\Items\Crafting\" />
-	  <Folder Include="Assets\Tiles\Geodes\" />
-	  <Folder Include="Assets\UI\" />
 	  <Folder Include="Content\Items\Consumables\" />
 	  <Folder Include="Content\Dusts\" />
 	</ItemGroup>

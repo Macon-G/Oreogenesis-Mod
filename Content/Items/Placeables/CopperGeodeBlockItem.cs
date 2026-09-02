@@ -11,7 +11,7 @@ namespace Oreogenesis.Content.Items.Placeables
 
 		public override void SetStaticDefaults()
 		{
-			Item.ResearchUnlockCount = 100;
+			Item.ResearchUnlockCount = 1;
 		}
 
 		public override void SetDefaults()

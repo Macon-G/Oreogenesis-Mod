@@ -10,7 +10,7 @@ namespace Oreogenesis.Content.Tiles.Crystals
         protected abstract int GeodeType { get; }
         protected abstract int ShardItemType { get; }
         protected abstract Color MapColor { get; }
-        public override string Texture => $"Oreogenesis/Assets/Tiles/Crystals/{Name}";
+        public override string Texture => $"Oreogenesis/Assets/Template/GeodeCrystal";
         protected virtual int FrameSize => 18;
         
         protected enum AttachDir

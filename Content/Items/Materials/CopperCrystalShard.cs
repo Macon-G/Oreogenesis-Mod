@@ -1,24 +1,12 @@
-﻿using Terraria;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Oreogenesis.Content.Items.Materials
 {
-    public class CopperCrystalShard : ModItem
+    public class CopperCrystalShard : BaseCrystalShard
     {
-        public override string Texture => $"Oreogenesis/Assets/Items/Crystals/{Name}";
-        public override void SetStaticDefaults()
-        {
-            Item.ResearchUnlockCount = 25;
-        }
-
-        public override void SetDefaults()
-        {
-            Item.width = 20;
-            Item.height = 20;
-            Item.maxStack = 9999;
-            Item.value = Item.buyPrice(copper: 2);
-            Item.rare = ItemRarityID.White;
-        }
+        public override Color CrystalColor { get; } = new Color(150, 67, 22, 255);
     }
 }
