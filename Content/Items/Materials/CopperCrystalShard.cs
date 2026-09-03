@@ -7,6 +7,6 @@ namespace Oreogenesis.Content.Items.Materials
 {
     public class CopperCrystalShard : BaseCrystalShard
     {
-        public override Color CrystalColor { get; } = new Color(150, 67, 22, 255);
+        public override Color CrystalColor => new Color(150, 67, 22);
     }
 }

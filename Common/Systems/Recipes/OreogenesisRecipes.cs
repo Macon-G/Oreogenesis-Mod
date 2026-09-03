@@ -14,6 +14,34 @@ namespace Oreogenesis.Common.Systems.Recipes
                 .AddIngredient<CopperCrystalShard>(4)
                 .AddTile<CrystalAssemblerTile>()
                 .Register();
+            Recipe.Create(ItemID.TinBar)
+                .AddIngredient<TinCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
+            Recipe.Create(ItemID.IronBar)
+                .AddIngredient<IronCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
+            Recipe.Create(ItemID.LeadBar)
+                .AddIngredient<LeadCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
+            Recipe.Create(ItemID.SilverBar)
+                .AddIngredient<SilverCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
+            Recipe.Create(ItemID.TungstenBar)
+                .AddIngredient<TungstenCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
+            Recipe.Create(ItemID.GoldBar)
+                .AddIngredient<GoldCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
+            Recipe.Create(ItemID.PlatinumBar)
+                .AddIngredient<PlatinumCrystalShard>(4)
+                .AddTile<CrystalAssemblerTile>()
+                .Register();
         }
     }
 }

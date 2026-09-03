@@ -4,13 +4,16 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Oreogenesis.Content.Items.Placeables
+namespace Oreogenesis.Content.Items.Placeables.Geodes
 {
     public abstract class BaseGeodeBlockItem : ModItem
     {
         public override string Texture => $"Oreogenesis/Assets/Template/GeodeBlockItem";
         
         public abstract Color ItemColor { get; }
+        public abstract int BaseItemID { get; }
+        public abstract int GeodeTileID { get; }
+
 
         public override void SetStaticDefaults()
         {
@@ -28,7 +31,7 @@ namespace Oreogenesis.Content.Items.Placeables
             Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<CopperGeodeBlock>();
+            Item.createTile = Geode;
             Item.rare = ItemRarityID.White;
             Item.value = Item.buyPrice(copper: 1);
             Item.color = ItemColor;
@@ -37,7 +40,7 @@ namespace Oreogenesis.Content.Items.Placeables
         public override void AddRecipes()
         {
             CreateRecipe(10)
-                .AddIngredient(ItemID.CopperBar, 10)
+                .AddIngredient(BaseItemID, 10)
                 .AddIngredient(ItemID.ManaCrystal)
                 .AddTile(TileID.Bottles)
                 .Register();

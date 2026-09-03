@@ -9,7 +9,7 @@ namespace Oreogenesis.Content.Tiles.Geodes
     {
         protected abstract int CrystalType { get; }
         protected abstract Color MapColor { get; }
-        public override string Texture => $"Oreogenesis/Assets/Tiles/Geodes/{Name}";
+        public override string Texture => $"Oreogenesis/Assets/Template/GeodeBlockTile";
         protected virtual int GrowthChanceDenominator => 4;
         protected virtual int MaxNearbyCrystals => 10;
         protected virtual int NeighborhoodRadius => 2;
